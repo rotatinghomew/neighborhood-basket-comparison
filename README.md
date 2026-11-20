@@ -4,7 +4,7 @@
 
 ## 资料
 
-`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`quotes`、`shops`、`needs`、`discounts`、`households`、`corrections`、`publication`。日期是当地日历日期。空值表示没有对应观测或状态资料，不是数值零。
+`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`quotes`、`shops`、`needs`、`discounts`、`households`、`corrections`、`publication`、`aid`、`claims`、`redemptions`。日期是当地日历日期。空值表示没有对应观测或状态资料，不是数值零。
 
 price_cents 为报价单位的分值，grams 是单位克重，step 是一次购买的单位倍数。报价按同周同店同时段适用。折扣的 units 是最低整单购买单位数；maximum 是折扣可用次数。会员条件由家庭资料列明。
 

@@ -23,3 +23,13 @@ class SampleTests(unittest.TestCase):
         statuses = {row['status'] for row in self.data['quotes']}
         self.assertIn('缺货', statuses)
         self.assertIn('未采价', statuses)
+
+    def test_store_correction_and_coupon_events_link_to_consistent_keys(self):
+        data = self.data
+        for correction in data['corrections']:
+            district = data['shops'][correction['shop']]['district']
+            self.assertTrue(any(entry['week']==correction['week'] and entry['scope']==district for entry in data['publication']))
+        claims = {claim['id'] for claim in data['claims']}
+        for event in data['redemptions']:
+            self.assertIn(event['claim'], claims)
+        self.assertTrue(any(event['kind']=='已取消' and any(earlier['id']==event['id'] and earlier['day']<event['day'] and earlier['kind']=='已送达' for earlier in data['redemptions']) for event in data['redemptions']))

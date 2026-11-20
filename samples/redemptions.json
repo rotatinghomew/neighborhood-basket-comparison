@@ -1,0 +1,42 @@
+[
+  {
+    "id": "券甲",
+    "claim": "申请0",
+    "kind": "已送达",
+    "funds_cents": 1200,
+    "promo_shop": "北口菜摊",
+    "reserved_units": 1,
+    "day": "2026-08-31",
+    "valid_until": "2026-09-07"
+  },
+  {
+    "id": "券乙",
+    "claim": "申请1",
+    "kind": "已核销",
+    "funds_cents": 1100,
+    "promo_shop": null,
+    "reserved_units": 0,
+    "day": "2026-08-31",
+    "valid_until": "2026-09-07"
+  },
+  {
+    "id": "券丙",
+    "claim": "申请2",
+    "kind": "拟发",
+    "funds_cents": 1200,
+    "promo_shop": "北口菜摊",
+    "reserved_units": 1,
+    "day": "2026-08-31",
+    "valid_until": "2026-09-07"
+  },
+  {
+    "id": "券甲",
+    "claim": "申请0",
+    "kind": "已取消",
+    "funds_cents": 1200,
+    "promo_shop": "北口菜摊",
+    "reserved_units": 1,
+    "day": "2026-09-02",
+    "valid_until": "2026-09-07"
+  }
+]

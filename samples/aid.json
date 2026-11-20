@@ -1,0 +1,21 @@
+{
+  "total_cents": 15000,
+  "district_caps_cents": {
+    "上街": 1500,
+    "河街": 1300
+  },
+  "baseline_weeks": [
+    "2026-08-17",
+    "2026-08-24"
+  ],
+  "min_matched_needs": 4,
+  "max_weekly_change_cents": 200,
+  "promo_coupon_limits": [
+    {
+      "week": "2026-08-31",
+      "shop": "北口菜摊",
+      "units": 2
+    }
+  ],
+  "rules": "补贴上限在固定完整篮子成本上升时增加等额分值，下降时减少；单周变更最多 max_weekly_change_cents；不可比较时沿用旧上限。发券款为购物成本与补贴上限之较小者；超出部分列为居民自付。"
+}

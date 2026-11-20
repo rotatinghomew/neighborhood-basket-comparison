@@ -1,0 +1,34 @@
+[
+  {
+    "id": "主粮",
+    "grams": 900,
+    "fixed": "粳米",
+    "alternatives": [
+      "小米"
+    ]
+  },
+  {
+    "id": "配餐粮",
+    "grams": 400,
+    "fixed": "小米",
+    "alternatives": [
+      "粳米"
+    ]
+  },
+  {
+    "id": "蔬菜",
+    "grams": 750,
+    "fixed": "大白菜",
+    "alternatives": [
+      "娃娃菜"
+    ]
+  },
+  {
+    "id": "豆制品",
+    "grams": 480,
+    "fixed": "豆腐",
+    "alternatives": [
+      "嫩豆腐"
+    ]
+  }
+]

@@ -29,6 +29,10 @@ class SampleTests(unittest.TestCase):
         for correction in data['corrections']:
             district = data['shops'][correction['shop']]['district']
             self.assertTrue(any(entry['week']==correction['week'] and entry['scope']==district for entry in data['publication']))
+            quote = next(entry for entry in data['quotes'] if all(entry[key]==correction[key] for key in ('week','shop','item')))
+            need = next(entry for entry in data['needs'] if entry['fixed']==correction['item'])
+            self.assertLess(quote['step']*correction['grams'],need['grams'])
+            self.assertGreaterEqual(quote['step']*quote['grams'],need['grams'])
         claims = {claim['id'] for claim in data['claims']}
         for event in data['redemptions']:
             self.assertIn(event['claim'], claims)

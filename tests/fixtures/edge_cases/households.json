@@ -1,0 +1,1 @@
+[{"id": "单次取货", "max_shops": 1, "max_grams": 3500, "member_shops": [], "window": [525, 640]}, {"id": "分两次取货", "max_shops": 2, "max_grams": 5000, "member_shops": ["南口菜摊"], "window": [525, 660]}]
